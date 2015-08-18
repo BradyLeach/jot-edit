@@ -83,7 +83,7 @@ class FProfile extends CForm {
         */      
     private function InitProfile(){
         
-        $this->m_inputs[FProfile::NAME] = new FCreatorName('', FProfile::NAME, "Profile Name", TRUE, TRUE);       
+        $this->m_inputs[FProfile::NAME] = new FICreatorName('', FProfile::NAME, "Profile Name", TRUE, TRUE);       
       
     }
 

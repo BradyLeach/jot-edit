@@ -22,14 +22,14 @@ include_once $path . '/jot-edit/scripts/php/page/PToolbar.php';
     * @see    CPageB for detailed behaviour of parent class. 
     * 
     *      //Create A Head Object     
-    *       $gngPage = new GNG_Page($pageTitle);
+    *       $PPageage = new GNG_Page($pageTitle);
     * 
     *      //Example Source           
     *      //Add a ContentHeader Object to the content holder
-    *      $gngPage->AddToContent(new CDiv("content", array("class"=>"curve_box_softer stroke_white clearest_skyblue")));
+    *      $PPageage->AddToContent(new CDiv("content", array("class"=>"curve_box_softer stroke_white clearest_skyblue")));
     * 
     *      //To output a PostNode      
-    *      $gngPage->Render();
+    *      $PPageage->Render();
     *
     * @note The page consistes of the following container hierachy.
     * 

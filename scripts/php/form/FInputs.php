@@ -85,7 +85,7 @@ include_once $path . '/jot-edit/scripts/php/stCore/Helpers.php';
     * @param boolean $m_newUser TRUE if the input is being used to sign up a new
     * user otherwise false.
     */
-class FUsername extends CTextInput {
+class FIUsername extends CTextInput {
     
     private $m_newUser; //TRUE if the input is being used to sign up a newuser otherwise false.
                             
@@ -142,7 +142,7 @@ class FUsername extends CTextInput {
     * @brief A name form input.
     * 
     */
-class FName extends CTextInput {
+class FIName extends CTextInput {
 
         /**
          * @brief Validates the name form input.
@@ -166,7 +166,7 @@ class FName extends CTextInput {
     * @brief A unit for an address form input.
     * 
     */
-class FUnit extends CTextInput {
+class FIUnit extends CTextInput {
 
         /**
          * @brief Validates the unit part of an address form input.
@@ -191,7 +191,7 @@ class FUnit extends CTextInput {
     * @brief A unit for an address form input.
     * 
     */
-class FAddressLine extends CTextInput {
+class FIAddressLine extends CTextInput {
 
         /**
          * @brief Validates the unit part of an address form input.
@@ -217,7 +217,7 @@ class FAddressLine extends CTextInput {
     * @brief A name form input.
     * 
     */
-class FPhone extends CNumberInput {
+class FIPhone extends CNumberInput {
 
         /**
          * @brief Validates the name form input.
@@ -240,7 +240,7 @@ class FPhone extends CNumberInput {
     * @brief A name form input.
     * 
     */
-class FStNumber extends CNumberInput {
+class FIStNumber extends CNumberInput {
 
         /**
          * @brief Validates the name form input.
@@ -263,7 +263,7 @@ class FStNumber extends CNumberInput {
     * @brief A name form input.
     * 
     */
-class FPCode extends CNumberInput {
+class FIPCode extends CNumberInput {
 
         /**
          * @brief Validates the name form input.
@@ -290,7 +290,7 @@ class FPCode extends CNumberInput {
     * So it must be URL safe.
     * 
     */
-class FCreatorName extends CTextInput {
+class FICreatorName extends CTextInput {
 
     private $m_newCreator; //TRUE if the input is being used to sign up a newuser otherwise false.
                             

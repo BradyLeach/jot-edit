@@ -19,7 +19,9 @@ $( "#login" ).submit(function( e ) {
             console.log(Result);
         switch(Result.result){
                  case 'pass':                   
-                    window.location.reload(true);
+                   // window.location.reload(true);
+                   window.location.replace(Result.redirect);
+                   console.log(Result);
                     break;
                 case 'fail':
                     $( "#login" ).prepend( Result.message );                
@@ -38,9 +40,7 @@ $( "#login" ).submit(function( e ) {
         console.log(status);
         console.log(error);
             $( "#login_loading" ).remove();
-            alert(xhr.statusText);//handle this better
-            alert(status);//handle this better
-            alert(error);//handle this better
+
         }
     }
   );

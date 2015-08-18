@@ -1,7 +1,7 @@
 <?php
 $path = filter_input(INPUT_SERVER,'DOCUMENT_ROOT');
 include_once $path . '/jot-edit/scripts/php/stCore/stCore.php';
-include_once $path . '/jot-edit/scripts/php/form/FPhone.php';
+include_once $path . '/jot-edit/scripts/php/form/FPhoneNumber.php';
 include_once $path . '/jot-edit/scripts/php/manager/MContact.php';
 
 

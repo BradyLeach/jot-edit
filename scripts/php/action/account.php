@@ -33,7 +33,7 @@ if(!$am->HasAccess()){ Redirect('../../../error/unauthorized-access');}
 $request = filter_input(INPUT_GET, "request");
 
     //Create a page.
-$newPage = new PPage("Green and Gold Records\nMembers Area"); 
+$newPage = new PPage("jot-edit - account tools"); 
 
 
 
@@ -43,7 +43,7 @@ $newPage = new PPage("Green and Gold Records\nMembers Area");
     //Add Meta and other tags to the header.
 $newPage->AddMeta("robots", "noindex");//Dont want our index page in search results.
 $newPage->AddMeta("description", "Green and Gold Records Login page.");
-$newPage->AddCss("/jot-edit/css2/gngr2.css");        
+$newPage->AddCss("/jot-edit/css/jotedit.css");        
 
     //Add the scripts to the page
 $newPage->AddScriptLink("https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" );

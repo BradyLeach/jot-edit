@@ -68,7 +68,7 @@ class FPhoneNumber extends CForm {
         * 	
         */
     protected function Init($new) {
-        $this->m_inputs[FPhoneNumber::NUM] = new FPhone('',FPhoneNumber::NUM, "Phone number",TRUE, TRUE);
+        $this->m_inputs[FPhoneNumber::NUM] = new FIPhone('',FPhoneNumber::NUM, "Phone number",TRUE, TRUE);
         
         if(!$new){
             $this->m_inputs[FPhoneNumber::SUBMIT] = new CSubmitButton('', array("name"=>FPhoneNumber::SUBMIT), "update", "update");

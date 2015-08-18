@@ -28,7 +28,7 @@ require_once $path . '/jot-edit/scripts/php/manager/MSession.php';
         //Add Meta and other tags to the header.
     $newPage->AddMeta("robots", "noindex");//Dont want our index page in search results.
     $newPage->AddMeta("description", "Green and Gold Records Login page.");
-    $newPage->AddCss("/jot-edit/css2/gngr2.css");        
+    $newPage->AddCss("/jot-edit/css/jotedit.css");        
 
         //Add the scripts to the page
     $newPage->AddScriptLink("https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" );

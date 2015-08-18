@@ -1,7 +1,7 @@
 <?php /*header('content-type: application/json; charset=utf-8');*/
 include_once "../stCore/stCore.php";
 include_once "../form/FLogin.php";
-include_once "../page/GNGP.php";
+include_once "../page/PPage.php";
 
 //session_start();
 
@@ -15,7 +15,7 @@ $result = array('result'=>'error', 'message'=>'error', 'redirect'=>'');
                 
     }elseif($newLogin->Processed()){//If the form has been successfully processed redirect.   
 
-        $result = array('result'=>'pass', 'message'=>'login successfull', 'redirect'=>'/jot-edit/');
+        $result = array('result'=>'pass', 'message'=>'login successfull', 'redirect'=>'/jot-edit/studio');
         
     }else{
         

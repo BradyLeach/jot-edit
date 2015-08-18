@@ -26,10 +26,10 @@ class PNav extends CNav{
 
         $navList = new CList($this->m_id . '_list', 'ul', array());
         
-       /* $navList->AddItem('', array(), new CLink("home_btn",array('class'=>'nav_item'),"home", "/jot-edit/"));
-        $navList->AddItem('', array(), new CLink("about_btn",array('class'=>'nav_item'),"about us", "/jot-edit/about"));
+        $navList->AddItem('', array(), new CLink("home_btn",array('class'=>'nav_item'),"home", "/jot-edit/"));
+        $navList->AddItem('', array(), new CLink("blogs_btn",array('class'=>'nav_item'),"blogs", "/jot-edit/blogs"));
         $navList->AddItem('', array(), new CLink("other_btn",array('class'=>'nav_item'),"features", "/features"));
-        * */
+    
         
         $this->AddChild($navList);
     }

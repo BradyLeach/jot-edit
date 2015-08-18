@@ -89,13 +89,13 @@ class FAddress extends CForm {
         */      
     private function InitAddressInput(){
         
-        $this->m_inputs[FAddress::LINE1] = new FAddressLine('', FAddress::LINE1, "Address Line 1", TRUE, TRUE);       
-        $this->m_inputs[FAddress::LINE2] = new FAddressLine('', FAddress::LINE2, "Address Line 2", FALSE, TRUE);
+        $this->m_inputs[FAddress::LINE1] = new FIAddressLine('', FAddress::LINE1, "Address Line 1", TRUE, TRUE);       
+        $this->m_inputs[FAddress::LINE2] = new FIAddressLine('', FAddress::LINE2, "Address Line 2", FALSE, TRUE);
    
-        $this->m_inputs[FAddress::SUBURB] = new FName('', FAddress::SUBURB, "Suburb", TRUE, TRUE);        
+        $this->m_inputs[FAddress::SUBURB] = new FIName('', FAddress::SUBURB, "Suburb", TRUE, TRUE);        
         $this->m_inputs[FAddress::SUBURB]->GetInput()->AddAttribute('size', 15);
 
-        $this->m_inputs[FAddress::POST_CODE] = new FPCode('', FAddress::POST_CODE, "Post Code", TRUE, TRUE);        
+        $this->m_inputs[FAddress::POST_CODE] = new FIPCode('', FAddress::POST_CODE, "Post Code", TRUE, TRUE);        
         $this->m_inputs[FAddress::POST_CODE]->GetInput()->AddAttribute('size', 6);  
         
         $this->m_inputs[FAddress::STATE] = new CSelectInput('', array(), FAddress::STATE, "State", 'select a state');

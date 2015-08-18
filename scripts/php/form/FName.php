@@ -73,8 +73,8 @@ class FName extends CForm {
         * 	
         */
     protected function Init() {
-        $this->m_inputs[FName::FNAME] = new FName('',FName::FNAME, "Name",TRUE, TRUE);
-        $this->m_inputs[FName::SNAME] = new FName('',FName::SNAME, "Surname",TRUE, TRUE);  
+        $this->m_inputs[FName::FNAME] = new FIName('',FName::FNAME, "Name",TRUE, TRUE);
+        $this->m_inputs[FName::SNAME] = new FIName('',FName::SNAME, "Surname",TRUE, TRUE);  
         $this->m_inputs[FName::SUBMIT] = new CSubmitButton('', array("name"=>FName::SUBMIT), "update", "update");
         
 

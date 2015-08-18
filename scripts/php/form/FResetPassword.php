@@ -70,7 +70,7 @@ class FResetPassword extends CForm {
     protected function Init() {
         
             ///The personal details
-        $this->m_inputs[FResetPassword::UNAME] = new FUsername ('',FResetPassword::UNAME,"Username :" );
+        $this->m_inputs[FResetPassword::UNAME] = new FIUsername ('',FResetPassword::UNAME,"Username :" );
       
        
             ///The pass for login and contact

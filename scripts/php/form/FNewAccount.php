@@ -72,17 +72,17 @@ class FNewAccount extends CForm {
     protected function Init() {
         
             ///The personal details
-        $this->m_inputs[FNewAccount::FIRST_NAME] = new FName(FNewAccount::FIRST_NAME, FNewAccount::FIRST_NAME, FNewAccount::FIRST_NAME, "first Name", TRUE, TRUE);
-        $this->m_inputs[FNewAccount::SURNAME] = new FName(FNewAccount::SURNAME,FNewAccount::SURNAME, FNewAccount::SURNAME, "Surname", TRUE, TRUE);    
+        $this->m_inputs[FNewAccount::FIRST_NAME] = new FIName(FNewAccount::FIRST_NAME, FNewAccount::FIRST_NAME, FNewAccount::FIRST_NAME, "first Name", TRUE, TRUE);
+        $this->m_inputs[FNewAccount::SURNAME] = new FIName(FNewAccount::SURNAME,FNewAccount::SURNAME, FNewAccount::SURNAME, "Surname", TRUE, TRUE);    
        
             ///The Act details
-        $this->m_inputs[FNewAccount::ACT_NAME] = new FCreatorName(FNewAccount::ACT_NAME,FNewAccount::ACT_NAME, FNewAccount::ACT_NAME, "Act Name", TRUE, TRUE);
+        $this->m_inputs[FNewAccount::ACT_NAME] = new FICreatorName(FNewAccount::ACT_NAME,FNewAccount::ACT_NAME, FNewAccount::ACT_NAME, "Act Name", TRUE, TRUE);
       
             ///The email address for login and contact
         $this->m_inputs[FNewAccount::EMAIL] = new CEmailInput(FNewAccount::EMAIL, FNewAccount::EMAIL, "Email", TRUE, TRUE);
        
             ///Login details.
-        $this->m_inputs[FNewAccount::USERNAME] = new FUsername(FNewAccount::USERNAME, FNewAccount::USERNAME,  "User Name", TRUE, TRUE, TRUE);
+        $this->m_inputs[FNewAccount::USERNAME] = new FIUsername(FNewAccount::USERNAME, FNewAccount::USERNAME,  "User Name", TRUE, TRUE, TRUE);
         $this->m_inputs[FNewAccount::PASSWORD] = new CPasswordInput(FNewAccount::PASSWORD, FNewAccount::PASSWORD, "Password", TRUE, TRUE);
         $this->m_inputs[FNewAccount::PASSWORD2] = new CPasswordInput(FNewAccount::PASSWORD2, FNewAccount::PASSWORD2, "Confirm Password", TRUE, TRUE);
         

@@ -96,15 +96,15 @@ $newPage->Render();
 
 /**
  * LoadIndexPage()
- * new gngPage("Green and Gold Records")
- * gngPage->getHeader()->AddMeta("name", array("values"));
- * gngPage->getHeader()->AddMeta("name", array("values"));
+ * new PPageage("Green and Gold Records")
+ * PPageage->getHeader()->AddMeta("name", array("values"));
+ * PPageage->getHeader()->AddMeta("name", array("values"));
  * load latest 10 posts
  */
 /**
  * LoadContactPage()
- * new gngPage("contact page")
- * gngPage->getHeader()->AddMeta("name", array("values"));
- * gngPage->getHeader()->AddMeta("name", array("values"));
+ * new PPageage("contact page")
+ * PPageage->getHeader()->AddMeta("name", array("values"));
+ * PPageage->getHeader()->AddMeta("name", array("values"));
  * load all contact cards
  */

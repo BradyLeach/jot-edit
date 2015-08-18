@@ -20,7 +20,13 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
+@font-face {
+	font-family: 'Conv_Mechanical';
+	src: url('../css/fonts/Mechanical.eot');
+	src: local('☺'), url('../css/fonts/Mechanical.woff') format('woff'), url('../css/fonts/Mechanical.ttf') format('truetype'), url('../css/fonts/Mechanical.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
 
 
@@ -524,18 +530,12 @@ header{
     box-shadow:         0px 4px 5px 0px rgba(50, 50, 50, 0.71);
 }
 header h1 {
-    //text-transform: capitalize;
     text-align: right;
     margin:5px 25px 5px 25px;
-
     font-family:cmonster;
     font-size:48px;
     color:#FFFF33;
     color:#333;
-   /* text-shadow : 0px 0px 5px rgba(30, 30,30, 1), 
-                1px 0px 3px rgba(51, 153, 255, 0.8),
-                3px 0px 5px rgba(0, 0, 0, 0.9),
-                5px 2px 7px rgba(0, 0, 0, 0.9);*/
     padding-top:25px;
     padding-right:25px;
     border-bottom: thin solid #3a7aff;
@@ -554,71 +554,27 @@ header h1 {
 }
 .nav_item{ 
     margin  : 3px 3px 3px 3px;
-    
-    -webkit-box-shadow  : 0px 4px 5px 0px rgba(50, 50, 50, 0.9);
-    -moz-box-shadow     : 0px 4px 5px 0px rgba(50, 50, 50, 0.9);
-    box-shadow          : 0px 4px 5px 0px rgba(50, 50, 50, 0.9);   
-
-    border-top      : solid thin RGBA(255,255,255, 0.3);  
-    border-bottom   : solid thin RGBA(255,255,255, 0.0);  
-    border-top-right-radius     : 10px;
-    border-bottom-right-radius  : 10px;
     clear: both;
- }
-#navigation_list li:first-child > a {
-    border-top-right-radius     : 0px;
-    border-bottom-right-radius  : 0px;
-    border-top-left-radius      : 10px;
-    border-bottom-left-radius   : 10px;
- }
-#navigation_list li:nth-child(2) > a {
-    border-top-right-radius     : 0px;
-    border-bottom-right-radius  : 0px;
-    border-top-left-radius      : 0px;
-    border-bottom-left-radius   : 0px;     
- }    
+ }   
 .nav_item{
-    padding     : 5px 30px 10px 30px;
-    display     : block;
-    
-    color       : #FFF; /*rgba(250, 250, 250, 1.0);*/    
-    font-family : far;    
-    font-size   : 14px; 
+    padding     : 0px 30px 0px 30px;
+    display     : block;    
+    color       : #000; 
+    font-family: Conv_Mechanical;
+    font-size   : 18px; 
     font-weight : 700;
-    letter-spacing  : 6px;
     text-decoration : none;    
-    text-transform  : uppercase; 
-       
-  /*  text-shadow : 0px 0px 5px rgba(30, 30,30, 1), 
-                1px 0px 3px rgba(51, 153, 255, 0.8),
-                3px 0px 5px rgba(139, 169, 255, 0.9),
-                5px 2px 7px rgba(0, 0, 0, 0.9);*/
+
  }
 .nav_item:visited{
-     color:#FFF;
+     color:#000;
  }
  .nav_item:hover,
  .nav_item:active{
-    animation   : blur .95s ease-out infinite; 
+    text-decoration: underline;
+    color:#000;
  } 
- .nav_item:active {
-     color:#FFD;
- }
-.nav_item:active 
-{
-    text-shadow: 0px 0px 5px rgba(30, 30,30, 0.9), 
-                1px 0px 7px rgba(51, 31, 35, 0.8),
-                3px 0px 7px rgba(0, 0, 0, 0.9);
-    -webkit-box-shadow  : inset  0px 4px 5px 0px rgba(50, 50, 50, 0.9);
-    -moz-box-shadow     : inset 0px 4px 5px 0px rgba(50, 50, 50, 0.9);
-    box-shadow          : inset 0px 4px 5px 0px rgba(50, 50, 50, 0.9);
-    
-    border-bottom       : solid thin RGBA(255,255,255, 0.3);
-    border-bottom       : solid thin RGBA(255,255,255, 0.0);
-    border-top          : none;
-    
-    
-}
+
 header img{
     width   : auto; 
     margin  : auto; 

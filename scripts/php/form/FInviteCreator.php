@@ -72,7 +72,7 @@ class FInviteCreator extends CForm {
     protected function Init() {
         
             ///The personal details
-        $this->m_inputs[FInviteCreator::NAME] = new FName(FInviteCreator::NAME, FInviteCreator::NAME, "Name :", TRUE, TRUE);
+        $this->m_inputs[FInviteCreator::NAME] = new FIName(FInviteCreator::NAME, FInviteCreator::NAME, "Name :", TRUE, TRUE);
 
             ///The email address for login and contact
         $this->m_inputs[FInviteCreator::EMAIL] = new CEmailInput(FInviteCreator::EMAIL, FInviteCreator::EMAIL , "Email :");

@@ -48,8 +48,8 @@ $(window).scroll(function(){
 */
 
 $(document).ready(function() {
-    $("#artist_btn").click(function(event) {
+    $("#blogs_btn").click(function(event) {
         event.preventDefault();
-        $("#artist_list").slideToggle("slow");
+        $("#blogs_list").slideToggle("slow");
     });
 });

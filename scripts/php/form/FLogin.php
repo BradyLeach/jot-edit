@@ -68,7 +68,7 @@ class FLogin extends CForm {
         * 	
         */
     protected function Init() {
-        $this->m_inputs[FLogin::UNAME] = new FUsername(FLogin::UNAME,  FLogin::UNAME,"Username" );
+        $this->m_inputs[FLogin::UNAME] = new FIUsername(FLogin::UNAME,  FLogin::UNAME,"Username" );
         $this->m_inputs[FLogin::PASS] = new CPasswordInput(FLogin::PASS, FLogin::PASS, "Password");
         $this->m_inputs[FLogin::SUBMIT] = new CSubmitButton(FLogin::SUBMIT, array("name"=>"submit"), "submit", "GO!");
 

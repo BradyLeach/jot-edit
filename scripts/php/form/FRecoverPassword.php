@@ -73,7 +73,7 @@ class FRecoverPassword extends CForm {
     protected function Init() {
 
             ///The email address for login and contact
-        $this->m_inputs[FRecoverPassword::UNAME]  = new FUsername(FRecoverPassword::UNAME, FRecoverPassword::UNAME, "Username :");     
+        $this->m_inputs[FRecoverPassword::UNAME]  = new FIUsername(FRecoverPassword::UNAME, FRecoverPassword::UNAME, "Username :");     
         $this->m_inputs[FRecoverPassword::EMAIL] = new CEmailInput(FRecoverPassword::EMAIL, FRecoverPassword::EMAIL , "Email :", TRUE, TRUE);
         
             //Submit button

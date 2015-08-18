@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+
+var a = {
+  "jet": {
+    "-format": "script",
+    "-revision": "1",
+    "display": {
+      "-style": "cartoon",
+      "elements": {
+        "element": [
+          {
+            "-name": "Act",
+            "#text": "back"
+          },
+          {
+            "-name": "Character",
+            "#text": "forward"
+          }
+        ]
+      },
+      "headerAndFooter": {
+        
+      }
+    },
+    "tracking": {
+      "spellChecker": {
+        
+      },
+      "locations": {
+        
+      },
+      "characters": {
+        
+      }
+    },
+    "buttler": {
+      "moreAndContinues": {
+        
+      }
+    }
+  }
+};
+
+//var obj = JSON.parse(a);
+
+alert( a );
+
+alert( a["jet"]["display"]["elements"]["element"][0]["-name"]);
+//alert( obj['display']['elements'][0]['-name']);
+
+	
+	/*
+	$.ajax({
+    url: "http://localhost/jetget.php",
+    data: {"key1":"sFormats.xml"},
+    async: false,
+    //cache: false,
+    dataType: 'json',
+    type: 'GET',
+    success: function (Result) {
+        console.log(Result.format);
+        console.log(sFormats);
+        for (var i = 0; i < Result.format.length ; i++) {
+            sFormats.push(Result.format[i]);
+            console.log('pushing' + Result.format[i]);
+        }
+        console.log('after' + sFormats);
+        
+    },
+    error: function (xhr, status, error) {
+        console.log(xhr);
+        console.log(status);
+        console.log(error);
+    }
+}
+ );
+	*/
+	
+$.get("http://localhost/jetget.php",{'key1':'sFormats.xml'}, function(data){
+  alert("Data: " + data);
+});
+	
+	
+	
+	
+	
+</script>
+</head>
+
+<body>
+<iframe src='http://localhost:9001/p/PAD_NAME?showChat=false&showLineNumbers=false' width=600 height=400></iframe>
+
+</body>
+</html>

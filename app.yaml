@@ -1,0 +1,11 @@
+application: jotedit
+version: alpha-1
+runtime: php55
+api_version: 1
+
+handlers:
+- url: /stylesheets
+  static_dir: css
+
+- url: /.*
+  script: index.php

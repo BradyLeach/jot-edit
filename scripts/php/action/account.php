@@ -33,7 +33,7 @@ if(!$am->HasAccess()){ Redirect('../../../error/unauthorized-access');}
 $request = filter_input(INPUT_GET, "request");
 
     //Create a page.
-$newPage = new PPage("jot-edit - account tools"); 
+$newPage = new PPage("account tools"); 
 
 
 
@@ -62,14 +62,14 @@ $newPage->AddScriptLink("/jot-edit/scripts/js/action.js");
 //$newPage->AddToToolbar(new WButton('account','account','/jot-edit/action/account'));
 $newPage->AddToToolbar(new WButton('exit','sign out','/jot-edit/action/logout'));
 $newPage->AddToToolbar(new WButton('profile','profiles','/jot-edit/action/profile'));
-
+$newPage->AddToToolbar(new WButton('studio_btn','studio','/jot-edit/studio'));
 //  $newPage->AddToToolbar(new WAccountTools('account', array('class'=>'widget'), TRUE));
 //Do stuff in here
 //
 //
         //Artist Panel **This will be changed to ajax once that is fully intergrated
-$ap = new CDiv("artist_list", array());
-$ap->AddChild(new CPara('te',array(),'artists artists artists.'));
+$ap = new CDiv("blogs_list", array());
+$ap->AddChild(new CPara('te',array(),'blogs or tutorials.'));
 $newPage->AddToContent($ap);
 
 

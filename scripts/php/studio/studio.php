@@ -68,11 +68,27 @@ $newPage->AddScriptLink("/jot-edit/scripts/js/action.js");
 //$newPage->AddToToolbar(new WButton('account','account','/jot-edit/action/account'));
 $newPage->AddToToolbar(new WButton('exit','sign out','/jot-edit/action/logout'));
 $newPage->AddToToolbar(new WButton('profile','profiles','/jot-edit/action/profile'));
+$newPage->AddToToolbar(new WButton('account','account','/jot-edit/action/account'));
+
 
 //  $newPage->AddToToolbar(new WAccountTools('account', array('class'=>'widget'), TRUE));
-//Do stuff in here
+
+
+
+
+
+
+
+
+////Do stuff in here
 //
-//
+
+
+
+
+
+
+
         //Artist Panel **This will be changed to ajax once that is fully intergrated
 $ap = new CDiv("blogs_list", array());
 $ap->AddChild(new CPara('te',array(),'Blogs or tutorials'));
@@ -81,9 +97,9 @@ $newPage->AddToContent($ap);
 
 
 $at = new CDiv("account_tools_holder", array());
-$at->AddChild(new WAccountToolBar());
+//at->AddChild(new WAccountToolBar());
+$at->AddChild(new CText('account_tool_bar','p','','This is where quick access tool bar buttons will go.'));
 $newPage->AddToContent($at);
-
 
 
 
@@ -98,7 +114,7 @@ switch($request){
         break;
     default:
         //more things as functionality extends
-        $pan->AddChild(new CText('', 'div', '', 'default action in here just to show rewrite and ish working.'));
+        $pan->AddChild(new CText('', 'div', '', '<br/><br/>default action in here just to show rewrite and ish working.<br/><br/>'));
         break;
 }
 

@@ -49,6 +49,7 @@ if($am->HasAccess()){
     
     $newPage->AddToToolbar(new WButton('exit','sign out','/jot-edit/action/logout'));
     $newPage->AddToToolbar(new WButton('account','account','/jot-edit/action/account'));
+    $newPage->AddToToolbar(new WButton('studio_btn','studio','/jot-edit/studio'));
 }
 else{
     $newPage->AddToToolbar(new WEntry());     
@@ -61,8 +62,8 @@ else{
  */
 
     //Artist Panel **This will be changed to ajax once that is fully intergrated
-$ap = new CDiv("artist_list", array());
-$ap->AddChild(new CPara('te',array(),'this is some text in the artist panel.'));
+$ap = new CDiv("blogs_list", array());
+$ap->AddChild(new CPara('te',array(),'blogs or tutorials.'));
 $newPage->AddToContent($ap);
 
 
@@ -73,6 +74,10 @@ $newPage->AddToContent($pan);
 
     //Add more content panels
 $newPage->AddToContent(new CDiv("", array('class'=>'panelb')));
+
+//$pad = new CHtml('pad', 'iframe', array("src"=>"http://localhost:9001/p/PAD_NAME?showChat=false&showLineNumbers=false", "width"=>"600", "height"=>"400"));
+//$pan->AddChild($pad);
+
 $newPage->AddToContent(new CDiv("", array('class'=>'panelc')));
 
 

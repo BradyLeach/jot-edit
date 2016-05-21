@@ -29,20 +29,22 @@ It needs to have "rewrite rules" for hard coded links to work
 Ths is what i use in my XAMPP development environment.
 
 1. REWRITE
+--------------------------------------------------------------------------------------------------------------------------------
 
 RewriteEngine On 
 RewriteBase /
 AddDefaultCharset utf-8 
-RewriteRule   ^studio/search?$                                             scripts/php/studio/search.php?find=$1                            [QSA,NC,L]
-RewriteRule   ^studio/([A-Za-z0-9]+)/?$                                    scripts/php/studio/studio.php?request=$1                         [NC,L]
-RewriteRule   ^studio$                                                     scripts/php/studio/studio.php                                    [NC,L]
-RewriteRule   ^studio/$                                                    scripts/php/studio/studio.php                                    [NC,L]
-RewriteRule   ^action/account/([A-Za-z_-]+)/?$                             scripts/php/action/account.php?request=$1                        [NC,L]
-RewriteRule   ^action/account$                                             scripts/php/action/account.php                                   [NC,L]
-RewriteRule   ^action/([A-Za-z0-9_-]+)/([A-Za-z0-9]+)/([A-Za-z0-9]+)/?$    scripts/php/action/action.php?request=$1&ticket=$2&token=$3      [NC,L]
-RewriteRule   ^action/([A-Za-z0-9_-]+)/?$                                  scripts/php/action/action.php?request=$1                         [NC,L]
-#custom error
-RewriteRule		^error/([A-Za-z0-9_-]+)/?$                                 scripts/php/error/error.php?request=$1                            [NC,L]
+RewriteRule ^studio/search?$  scripts/php/studio/search.php?find=$1  [QSA,NC,L]
+
+RewriteRule ^studio/([A-Za-z0-9]+)/?$ scripts/php/studio/studio.php?request=$1  [NC,L]
+RewriteRule ^studio$ scripts/php/studio/studio.php  [NC,L]
+RewriteRule ^studio/$ scripts/php/studio/studio.php [NC,L]
+RewriteRule ^action/account/([A-Za-z_-]+)/?$  scripts/php/action/account.php?request=$1  [NC,L]
+RewriteRule ^action/account$ scripts/php/action/account.php [NC,L]
+RewriteRule ^action/([A-Za-z0-9_-]+)/([A-Za-z0-9]+)/([A-Za-z0-9]+)/?$ scripts/php/action/action.php?request=$1&ticket=$2&token=$3  [NC,L]
+RewriteRule ^action/([A-Za-z0-9_-]+)/?$ scripts/php/action/action.php?request=$1 [NC,L]
+//custom error
+RewriteRule ^error/([A-Za-z0-9_-]+)/?$  scripts/php/error/error.php?request=$1  [NC,L]
 
 
 
@@ -54,7 +56,7 @@ PHP CONFIG FILES BELOW
 --------------------------------------------------------------------------------------------------------------------------
 
 
-2. ICON MAP
+#2. ICON MAP
 
 IconMap_Config.php
 --------------------------------------------------------------------------------------------------------------------------------

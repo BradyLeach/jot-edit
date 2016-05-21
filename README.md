@@ -6,10 +6,12 @@ IF you are looking through this code, this is a work in progress. It is not Test
 I'm not sure what version of code this is. Enjoy. 
 
 ** COMMENTS **
+--------------------------------------------------------------------------------------------------------------------------------
 There are comments in the code but they may be a little bit lacking 
 at this point. You can build doxigen comment from the code it will be much easier to suss the class hierarchy.
 
 ** CONFIG**
+--------------------------------------------------------------------------------------------------------------------------------
 The system needs config files stored in your web root where they can not be accessed by malicious users.
 config files are needed for things to run properly.
 The 3 files can be found below
@@ -41,7 +43,7 @@ RewriteRule   ^action/([A-Za-z0-9_-]+)/([A-Za-z0-9]+)/([A-Za-z0-9]+)/?$    scrip
 RewriteRule   ^action/([A-Za-z0-9_-]+)/?$                                  scripts/php/action/action.php?request=$1                         [NC,L]
 #custom error
 RewriteRule		^error/([A-Za-z0-9_-]+)/?$                                 scripts/php/error/error.php?request=$1                            [NC,L]
---------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
@@ -49,14 +51,13 @@ RewriteRule		^error/([A-Za-z0-9_-]+)/?$                                 scripts/
 
 
 PHP CONFIG FILES BELOW
-
-
 --------------------------------------------------------------------------------------------------------------------------
 
 
 2. ICON MAP
+
 IconMap_Config.php
-<?php
+--------------------------------------------------------------------------------------------------------------------------------
 
 class IconMap_Config
 {
@@ -121,15 +122,12 @@ IconMap_Config::write('error','icon-attention');
     //Layers
 IconMap_Config::write('newItem','icon-plus');
 IconMap_Config::write('link','icon-link');
-   
-//EOF
---------------------------------------------------------------------------------------------------------------------------------
 
 
 
---------------------------------------------------------------------------------------------------------------------------
 
 3. Input Configuration
+--------------------------------------------------------------------------------------------------------------------------------
 The input configuration file puts the form input variable values in one place.
 So if there is a name field in a form you might have the following:
 
@@ -137,8 +135,12 @@ So if there is a name field in a form you might have the following:
   FInputConfig::write('fname_min', 5);                              // min length
   FInputConfig::write('fname_max', 240);                            // max length
   
--------------------------------
+
+
+
+
 FInputConfig.php
+--------------------------------------------------------------------------------------------------------------------------------
 /**
  * @brief Stores all of the form validation parameters so they can be adjusted
  * without having to alter code. Parameters include 
@@ -222,20 +224,19 @@ FInputConfig::write('medium_pword_max', 32); //Maximum length for a medium passw
 FInputConfig::write('strong_pword_min', 8);  //Minimum length for a strong password.
 FInputConfig::write('strong_pword_max', 56); //Maximum length for a strong password.
 
-EOF
-
---------------------------------------------------------------------------------------------------------------------------------
 
 
 
---------------------------------------------------------------------------------------------------------------------------------
+
+
 
 4. Database config file
+--------------------------------------------------------------------------------------------------------------------------------
 This will vary dependant on you database.
 My dev environment is uses pdo .
 
 CDB_Config.php
--------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
 class DB_Config
 {
     static $m_array;
@@ -258,10 +259,6 @@ DB_Config::write('db.basename', 'databaseName');
 DB_Config::write('db.user', 'databaseUser'*/);
 DB_Config::write('db.password','databasePassword');
 
-
-//EOF
-
---------------------------------------------------------------------------------------------------------------------------------
 
 
 Any more questions just let me know, but there are much better ways to do this.

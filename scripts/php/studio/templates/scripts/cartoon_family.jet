@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<jet>
+    <meta>
+        <format>script</format>
+        <revision>1</revision>
+        <owners>
+            <owner></owner>
+            <owner></owner>
+        </owners>
+        <revision></revision>
+        <created></created>
+        <pad_name></pad_name>
+        <pad_group></pad_group>
+        <pad_authors>
+            <author_id></author_id>
+            <author_id></author_id>
+        </pad_authors>
+    </meta>
+    <display>
+        <page>
+            <background>#FFF</background>
+            <foreground>#000</foreground>
+            <special>#888</special>
+            <margin-bottom>54</margin-bottom>
+            <margin-top>72</margin-top>
+            <margin-left>90</margin-left>
+            <margin-right>90</margin-right>
+            <margin-header>36</margin-header>
+            <margin-footer>36</margin-footer>
+            <leading>Normal</leading>
+            <width>612</width>
+            <height>792</height>
+        </page>
+        <paragraph></paragraph>
+        <font></font>
+        <elements>
+            <element >
+                <name>sp_new_act</name>
+                <display_name>New Act</display_name>
+                <font>
+                    <frill>0</frill>
+                    <background>#FFF</background>
+                    <colour>#000</colour>
+                    <font>courier_primeregular</font>
+                    <size>12</size>
+                    <styles>bold,underlined,caps</styles>
+                </font>
+                <paragraph>
+                    <alignment>center</alignment>
+                    <indent>0</indent>
+                    <padding-left>90</padding-left>
+                    <padding-right>90</padding-right>
+                    <padding-top>0</padding-top>
+                    <lineHeight>100%</lineHeight>                    
+                </paragraph>
+                <works>
+                    <paginate>sp_general</paginate>
+                    <onEnter>sp_transition</onEnter>
+                    <newPage>yes</newPage>
+                    <shortcut>7</shortcut>
+                    <revisionID>0</revisionID>
+                </works>
+            </element>
+            <element >
+                <name>sp_transition</name>
+                <display_name>Transition</display_name>
+                <font>
+                    <frill>0</frill>
+                    <background>#FFF</background>
+                    <colour>#000</colour>
+                    <font>courier_primeregular</font>
+                    <size>12</size>
+                    <styles>bold,caps</styles>
+                </font>
+                <paragraph>
+                    <alignment>Left</alignment>
+                    <indent>0</indent>
+                    <padding-left>396</padding-left>
+                    <padding-right>90</padding-right>
+                    <padding-top>0</padding-top>
+                    <lineHeight>100%</lineHeight>
+                </paragraph>
+                <works>
+                    <paginate>sp_transition</paginate>
+                    <onEnter>sp_shot</onEnter>
+                    <newPage>no</newPage>
+                    <shortcut>6</shortcut>
+                    <revisionID>0</revisionID>
+                </works>
+            </element>
+            <element >
+                <name>sp_shot</name>
+                <display_name>Shot</display_name>
+                <font>
+                    <frill>0</frill>
+                    <background>#FFF</background>
+                    <colour>#000</colour>
+                    <font>courier_primeregular</font>
+                    <size>12</size>
+                    <styles>caps</styles>
+                </font>
+                <paragraph>
+                    <alignment>Left</alignment>
+                    <indent>0</indent>
+                    <padding-left>190</padding-left>
+                    <padding-right>90</padding-right>
+                    <padding-top>11</padding-top>
+                    <lineHeight>100%</lineHeight>
+                </paragraph>
+                <works>
+                    <paginate>sp_general</paginate>
+                    <onEnter>sp_sceneheading</onEnter>
+                    <newPage>no</newPage>
+                    <shortcut>9</shortcut>
+                    <revisionID>0</revisionID>
+                </works>
+            </element>
+            <element >
+                <name>sp_sceneheading</name>
+                <display_name>Scene Heading</display_name>
+                <font>
+                    <frill>0</frill>
+                    <background>#FFF</background>
+                    <colour>#000</colour>
+                    <font>courier_primeregular</font>
+                    <size>12</size>
+                    <styles>bold,caps</styles>
+                </font>
+                <paragraph>
+                    <alignment>Left</alignment>
+                    <indent>0</indent>
+                    <padding-left>190</padding-left>
+                    <padding-right>90</padding-right>
+                    <padding-top>11</padding-top>
+                    <lineHeight>100%</lineHeight>
+                </paragraph>
+                <works>
+                    <paginate>sp_sceneheading</paginate>
+                    <onEnter>sp_action</onEnter>
+                    <newPage>no</newPage>
+                    <shortcut>1</shortcut>
+                    <revisionID>0</revisionID>
+                </works>
+            </element>
+            <element >
+                <name>sp_action</name>
+                <display_name>Action</display_name>
+                <font>
+                    <frill>0</frill>
+                    <background>#FFF</background>
+                    <colour>#000</colour>
+                    <font>courier_primeregular</font>
+                    <size>12</size>
+                    <styles></styles>
+                </font>
+                <paragraph>
+                    <alignment>Left</alignment>
+                    <indent>0</indent>
+                    <padding-left>190</padding-left>
+                    <padding-right>90</padding-right>
+                    <padding-top>11</padding-top>
+                    <lineHeight>100%</lineHeight>
+                </paragraph>
+                <works>
+                    <paginate>sp_action</paginate>
+                    <onEnter>sp_character</onEnter>
+                    <newPage>no</newPage>
+                    <shortcut>1</shortcut>
+                    <revisionID>0</revisionID>
+                </works>
+            </element>
+
+        </elements>
+        <sceneNumber></sceneNumber>
+        <titlepage></titlepage>
+        <headerAndFooter>
+            <header></header>
+            <footer></footer>
+        </headerAndFooter>
+    </display>
+    <tracking>
+        <smarttype></smarttype>
+        <spellChecker>
+            <range></range>
+            <word></word>
+        </spellChecker>
+        <locations>
+            <int></int>
+            <ext></ext>
+        </locations>
+        <castlist></castlist>
+        <characters>
+            <character></character>
+        </characters>
+    </tracking>
+    <buttler>
+        <moreAndContinues>
+            <dialogue></dialogue>
+            <scene></scene>
+        </moreAndContinues>
+        <CastListGenerator>
+            <autoParentheses>yes</autoParentheses>
+            <generate>no</generate>
+            <element>castlist</element>
+        </CastListGenerator>
+        <lockedPages></lockedPages>        
+    </buttler>
+    <revisions></revisions>
+    <misc>
+        <fd_windowstate>
+            <height>935</height>
+            <width>650</width>
+            <left>0</left>
+            <mode>normal</mode>
+        </fd_windowstate>
+        <fd_textState>
+            <scaling>100</scaling>
+            <selection>0,0</selection>
+            <showInvisible>no</showInvisible>
+        </fd_textState>
+        <fd_fontSpec>
+            <revisionID>0</revisionID>
+        </fd_fontSpec>
+        <fd_paragraphSpec>
+            <leading>regular</leading>
+        </fd_paragraphSpec>
+    </misc>
+</jet>
+
+
+
+<!-- 
+//all in inches to pixels
+jet {[
+page {
+//colours
+background-colour:#FF,
+forground-colour:#00,
+invisible-colour: #FF, //purly for import/export with final draft
+
+//structure
+margin-top : 72,
+margin-right: 90,
+margin-bottom: 64,
+margin-left : 90,
+header-margin: 36,
+footer-margin: 36,
+page-width:0,
+page-height: 0,
+leading:0,
+
+//document control settings
+breakDialogueAndAction: 'yes',
+smartQuotes: false,
+
+
+},
+caseList {
+addParentheses: 'yes',
+autoGenerate: 'yes',
+castListElement: 'castlist'
+},
+paragraphSpec{},
+fontSpec{},
+elementSpecs{[
+element{}
+]},
+pad{},
+-->
